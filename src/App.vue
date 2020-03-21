@@ -71,16 +71,15 @@ export default {
       this.employees = [...this.employees, newEmployee];
     },
 
-    
-        async getEmployees() {
-          try {
-            const response = await fetch("http://localhost:8083/employees");
-            const data = await response.json();
-            this.employees = data._embedded.employees;
-          } catch (error) {
-            console.error(error);
-          }
-        }
+    async getEmployees() {
+      try {
+        const response = await fetch("http://localhost:8083/employees");
+        const data = await response.json();
+        this.employees = data._embedded.employees;
+      } catch (error) {
+        console.error(error);
+      }
+    }
   }
 };
 </script>

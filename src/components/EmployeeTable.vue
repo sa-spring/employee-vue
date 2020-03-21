@@ -6,6 +6,7 @@
         <tr>
           <th>Employee name</th>
           <th>Employee role</th>
+          <th>Actions</th>
         </tr>
       </thead>
       <tbody>
